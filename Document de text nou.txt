@@ -1,0 +1,1 @@
+SELECT movies.tb_person.person_name, COUNT(*) as Rol_Number FROM movies.tb_person INNER JOIN movies.tb_movie_person ON movies.tb_movie_person.person_id =  movies.tb_person.person_id GROUP BY person_name ORDER BY Rol_Number DESC;
